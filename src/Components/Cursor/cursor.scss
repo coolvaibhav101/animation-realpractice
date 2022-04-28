@@ -1,0 +1,41 @@
+#cursor {
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+    background-color: white;
+    mix-blend-mode: difference;
+    border: 10px solid white;
+    position: fixed;
+    border-radius: 50%;
+    transition: 300ms ease-out;
+    @media (max-width:801px)  {
+        display:none;
+    }
+    z-index: 10000000000000000;
+  }
+.cursorClick {
+    animation: cursorAnim .3s forwards;
+    border: 1px solid red;
+  }
+  @keyframes cursorAnim {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(3);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }     
+
+.App-link:hover ~ #cursor{
+  color: white;
+  height: 300px;
+  height: 300px;
+}
+
+.App-link:hover ~ .App-header{
+  color: white;
+  background-color: wheat;
+}

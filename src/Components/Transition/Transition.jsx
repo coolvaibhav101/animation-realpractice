@@ -62,6 +62,7 @@ function Transition({timeline}) {
                 divNone.current.style.display = "none"
                 body.classList.remove("overflowNone");
             }, (durationInSec+durationInSec+1)*1000);
+            // eslint-disable-next-line 
     }, [])
     return (
         <div className='transitionMainDiv'>

@@ -13,6 +13,7 @@ const Home = () => {
 
     const aboutimg = useRef(null);
     useEffect(() => {
+
         // about.from(abouth1.current, {
         //     duration: .6,
         //     skewX: 10,
